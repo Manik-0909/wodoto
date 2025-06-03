@@ -49,6 +49,10 @@ body {
    font-size: var(--sub-heading1);
 }
 
+.sub-heading2 {
+   font-size: var(--sub-heading2);
+}
+
 .fs-18 {
    font-size: var(--fs-18);
 }
@@ -71,8 +75,52 @@ header {
    color: var(--white-color);
 }
 
-.about-us-cards h5 {
+.about-us-cards h5,
+.careers-sec h5 {
    font-size: var(--fs-24);
+}
+
+.keys-cards {
+   box-shadow: 0 0 10px var(--lighter-secondary-color);
+}
+
+.w-fit {
+   width: fit-content;
+}
+
+.requirements li::marker {
+   content: "➭ ";
+   font-size: 1.5em;
+   color: var(--primary-color);
+}
+
+.contact-form {
+   background: linear-gradient(
+      20deg,
+      var(--secondary-color),
+      var(--lighter-secondary-color)
+   );
+}
+
+.cursor-pointer {
+   cursor: pointer;
+}
+
+.input-h {
+   height: 40px;
+}
+
+.input-h:focus-within {
+   border: 1px solid var(--secondary-color);
+   box-shadow: 0 0 10px var(--white-color);
+}
+
+.white-btn {
+   background: var(--primary-color) !important;
+   font-size: var(--fs-18);
+   color: var(--white-color) !important;
+   font-weight: 700;
+   padding: 8px 40px;
 }
 
 /* Media Queries */
@@ -85,7 +133,8 @@ header {
       font-size: var(--sub-heading2);
    }
 
-   .about-us-cards h5 {
+   .about-us-cards h5,
+   .careers-sec h5 {
       font-size: var(--fs-20);
    }
 }
@@ -107,5 +156,11 @@ header {
 
    .sub-heading1 {
       font-size: var(--fs-24);
+   }
+}
+
+@media only screen and (max-width: 576px) {
+   .logo {
+      width: 80px;
    }
 }
