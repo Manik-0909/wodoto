@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+   --primary-color: #00263e;
+   --secondary-color: #fa6600;
+   --light-secondary-color: #f5f3ee;
+   --lighter-secondary-color: rgba(250, 102, 0, 0.25);
+   --white-color: #fff;
+   --black-color: #000;
+   --main-heading: 48px;
+   --sub-heading1: 36px;
+   --sub-heading2: 30px;
+   --letter-spacing: 0.28px;
+   --fs-24: 24px;
+   --fs-20: 20px;
+   --fs-18: 18px;
+   --max-w-xxl: 1400px;
+}
+
+*,
+body {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-size: 1rem;
+   font-family: "Manrope", sans-serif;
+   background: var(--light-secondary-color);
+   color: var(--primary-color);
+   letter-spacing: var(--letter-spacing);
+   min-height: 100vh;
+}
+
+.font-sora {
+   font-family: "Sora", sans-serif;
+}
+
+.max-w-xxl {
+   max-width: var(--max-w-xxl);
+   margin-inline: auto;
+}
+
+.main-heading {
+   font-size: var(--main-heading);
+}
+
+.sub-heading1 {
+   font-size: var(--sub-heading1);
+}
+
+.fs-18 {
+   font-size: var(--fs-18);
+}
+
+.primary-bg {
+   background: var(--primary-color);
+}
+
+.secondary-text {
+   color: var(--secondary-color);
+}
+
+header {
+   box-shadow: 0 0 5px var(--lighter-secondary-color);
+}
+
+.about-us-cards {
+   box-shadow: 0 0 3px var(--lighter-secondary-color);
+   background: var(--secondary-color);
+   color: var(--white-color);
+}
+
+.about-us-cards h5 {
+   font-size: var(--fs-24);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+   .main-heading {
+      font-size: 40px;
+   }
+
+   .sub-heading1 {
+      font-size: var(--sub-heading2);
+   }
+
+   .about-us-cards h5 {
+      font-size: var(--fs-20);
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .main-heading {
+      font-size: 36px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .main-heading {
+      font-size: 30px;
+   }
+
+   .fs-18 {
+      font-size: 1rem;
+   }
+
+   .sub-heading1 {
+      font-size: var(--fs-24);
+   }
+}
